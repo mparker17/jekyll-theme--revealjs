@@ -16,6 +16,7 @@ Note this theme doesn't currently expose many of [reveal.js' configuration optio
 There are [other ways to install and use themes][jekyll-themes], but the method presented here is the easiest way I've found to avoid cluttering your slides repo with implementation details.
 
 1. Install [Ruby][ruby] with [rbenv][rbenv], [Bundler][bundler], and [GitHub Pages][github-pages], if you haven't already:
+
     ```bash
     $ rbenv install 2.4.1
     $ gem install bundler
@@ -26,6 +27,7 @@ There are [other ways to install and use themes][jekyll-themes], but the method 
     $ bundle install
     $ curl -o '.gitignore' https://raw.githubusercontent.com/github/gitignore/master/Jekyll.gitignore
     ```
+
 2. Add the [benbalter/jekyll-remote-theme][benbalter-jekyll-remote-theme] plugin to `_config.yml`:
 
     ```yml
