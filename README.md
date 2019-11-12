@@ -11,6 +11,22 @@ Note this theme doesn't currently expose many of [reveal.js' configuration optio
 [cdnjs]: https://cdnjs.com
 [revealjs-config]: https://github.com/hakimel/reveal.js#configuration
 
+# Why?
+
+I created this project because:
+
+1. I wanted to version control my slideshow,
+2. I wanted a slideshow that I could load and use from any relatively modern device without transferring files, which meant a slideshow based on the near-universal HTML/CSS/JS standards,
+3. GitHub does a pretty good job of version-controlling HTML/CSS/JS; and GitHub Pages does a pretty good job of hosting HTML/CSS/JS,
+4. Reveal.js is a widely-used and frequently-updated HTML/CSS/JS slideshow framework that I've used before and found pretty nice,
+5. I didn't want to clone/fork Reveal.js in my own repo because it would quickly get out of date, and it would clutter my repo with implementation details,
+6. Existing Jekyll+Reveal.js solutions didn't work the way I wanted:
+    * e.g.: they were based on Jekyll Plugins, which GitHub Pages doesn't let me use
+    * e.g.: they assumed one Markdown file per slide, which was pretty intense
+7. I wanted to use Markdown for the slide content if at all possible, since I find it much easier to work with than raw HTML
+    * Both GitHub Pages and Reveal.js does this for me, but having Github do the rendering for me lowers the risk of accessibility tools running into Markdown and presenting something confusing to their users.
+    * Plus, doing the Markdown-to-HTML conversion ahead of time reduces the work that the (potentially slow) presentation computer has to do.
+
 # Install
 
 There are [other ways to install and use themes][jekyll-themes], but the method presented here is the easiest way I've found to avoid cluttering your slides repo with implementation details.
