@@ -2,8 +2,14 @@
 
 A minimalistic [reveal.js][revealjs] theme for [Jekyll][jekyll].
 
+This theme loads the latest reveal.js from [CloudFlare's cdnjs service][cdnjs]. This means you have to be online when you load your slideshow for the first time, so if you anticipate spotty conference WiFi, you might want to do that ahead of time. You might also want to pin the tab or something so you don't close it accidentally.
+
+Note this theme doesn't currently expose many of [reveal.js' configuration options][revealjs-config]. I hope to add more support for these over time.
+
 [revealjs]: https://revealjs.com
 [jekyll]: https://jekyllrb.com
+[cdnjs]: https://cdnjs.com
+[revealjs-config]: https://github.com/hakimel/reveal.js#configuration
 
 # Install
 
