@@ -45,7 +45,9 @@ There are [other ways to install and use themes][jekyll-themes], but the method 
 
     Note that, because you made changes to `_config.yml`, you will need to restart `jekyll serve`
 
-4. You likely also want to set this theme's default layout (i.e.: `/_layouts/default.html`) as the default for all pages your repo, so you don't have to manually specify the layout in the front-matter of each file. To do this, add the following to `_config.yml`:
+4. You likely also want to set this theme's default layout (i.e.: `/_layouts/default.html`) as the default for all pages your repo (using [Front Matter Defaults][jekyll-front-matter-defaults]), so you don't have to manually specify the layout in the [front matter][jekyll-front-matter] of each file.
+
+    To do this, add the following to `_config.yml`:
 
     ```yml
     defaults:
@@ -64,3 +66,5 @@ There are [other ways to install and use themes][jekyll-themes], but the method 
 [bundler]: https://bundler.io
 [github-pages]: https://github.com/github/pages-gem
 [benbalter-jekyll-remote-theme]: https://github.com/benbalter/jekyll-remote-theme
+[jekyll-front-matter-defaults]: https://jekyllrb.com/docs/configuration/front-matter-defaults/
+[jekyll-front-matter]: https://jekyllrb.com/docs/front-matter/
