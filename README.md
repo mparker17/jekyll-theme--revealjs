@@ -7,6 +7,8 @@ A minimalistic [reveal.js][revealjs] theme for [Jekyll][jekyll].
 
 # Install
 
+There are [other ways to install and use themes][jekyll-themes], but the method presented here is the easiest way I've found to avoid cluttering your slides repo with implementation details.
+
 1. Install [Ruby][ruby] with [rbenv][rbenv], [Bundler][bundler], and [Github Pages][github-pages], if you haven't already:
     ```bash
     $ rbenv install 2.4.1
@@ -37,11 +39,22 @@ A minimalistic [reveal.js][revealjs] theme for [Jekyll][jekyll].
 
     Note that, because you made changes to `_config.yml`, you will need to restart `jekyll serve`
 
-Note there are [other ways to install and use themes][jekyll-themes], but the method above is the easiest way to avoid cluttering your slides repo with implementation details.
+4. You likely also want to set this theme's default layout (i.e.: `/_layouts/default.html`) as the default for all pages your repo, so you don't have to manually specify the layout in the front-matter of each file. To do this, add the following to `_config.yml`:
 
+    ```yml
+    defaults:
+      -
+        scope:
+          path: ""
+        values:
+          layout: "default"
+    ```
+
+    Note that, because you made changes to `_config.yml`, you will need to restart `jekyll serve`
+
+[jekyll-themes]: https://jekyllrb.com/docs/themes/
 [ruby]: https://www.ruby-lang.org
 [rbenv]: https://github.com/rbenv/rbenv
 [bundler]: https://bundler.io
 [github-pages]: https://github.com/github/pages-gem
 [benbalter-jekyll-remote-theme]: https://github.com/benbalter/jekyll-remote-theme
-[jekyll-themes]: https://jekyllrb.com/docs/themes/
