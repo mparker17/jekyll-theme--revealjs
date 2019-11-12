@@ -105,3 +105,22 @@ There are [other ways to install and use themes][jekyll-themes], but the method 
 [jekyll-front-matter-defaults]: https://jekyllrb.com/docs/configuration/front-matter-defaults/
 [jekyll-front-matter]: https://jekyllrb.com/docs/front-matter/
 [jekyll-commonmark-ghpages]: https://github.com/github/jekyll-commonmark-ghpages
+
+# Use
+
+Create [one Jeykll page][jekyll-page] for each slideshow (yes, per slideshow; not per slide, nor per section).
+
+I generally create three slideshows in a repo:
+
+1. The main slideshow at `slides.md` which:
+    1. Shows the URL of your GitHub Pages repo so your audence can look up your slides
+2. An optional speaker notes slideshow at `speaker-notes.md`
+3. A landing page at `index.md` which:
+    1. Has the title of the presentation and speaker name,
+        * i.e.: so that people know they landed on the right page
+    2. Has a short summary of the presentation,
+        * i.e.: the sort of thing that you might submit in response to a call for speakers; and might show up as your talk's description/summary/synopsis on the conference website
+    3. Links to `slides.md` below the summary,
+    4. Links to `speaker-notes.md` below the summary, if applicable.
+
+[jekyll-page]: https://jekyllrb.com/docs/pages/
