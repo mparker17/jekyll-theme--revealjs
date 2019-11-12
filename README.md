@@ -62,6 +62,24 @@ There are [other ways to install and use themes][jekyll-themes], but the method 
 
     Note that, because you made changes to `_config.yml`, you will need to restart `jekyll serve`
 
+5. You likely want to add the [github/jekyll-commonmark-ghpages][jekyll-commonmark-ghpages] plugin so you can mix HTML (i.e.: to delimit slides) and Markdown (i.e.: for ease-of-use) more easily.
+
+    To do this, add the following to `_config.yml`:
+
+    ```yml
+    plugins:
+        - jekyll-commonmark-ghpages
+    markdown: CommonMarkGhPages
+    commonmark:
+      options: ["SMART", "FOOTNOTES"]
+      extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
+    ```
+
+    ... then run `bundle install`.
+
+    Note that, because you made changes to `_config.yml`, you will need to restart `jekyll serve`
+
 [jekyll-themes]: https://jekyllrb.com/docs/themes/
 [ruby]: https://www.ruby-lang.org
 [rbenv]: https://github.com/rbenv/rbenv
@@ -70,3 +88,4 @@ There are [other ways to install and use themes][jekyll-themes], but the method 
 [benbalter-jekyll-remote-theme]: https://github.com/benbalter/jekyll-remote-theme
 [jekyll-front-matter-defaults]: https://jekyllrb.com/docs/configuration/front-matter-defaults/
 [jekyll-front-matter]: https://jekyllrb.com/docs/front-matter/
+[jekyll-commonmark-ghpages]: https://github.com/github/jekyll-commonmark-ghpages
