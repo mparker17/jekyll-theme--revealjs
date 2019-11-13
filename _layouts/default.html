@@ -14,7 +14,9 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js" integrity="sha256-jtcENl8rkEXiIgaE02PeFrFJfni/dKi61+2m9QJhnJs=" crossorigin="anonymous"></script>
         <script>
-            Reveal.initialize();
+            Reveal.initialize(
+                {{ site.revealjs | jsonify }}
+            );
         </script>
     </body>
 </html>
