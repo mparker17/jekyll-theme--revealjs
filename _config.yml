@@ -1,16 +1,25 @@
 # Default reveal.js configuration.
 # See https://github.com/hakimel/reveal.js#configuration
 revealjs:
+  width: 960
+  height: 700
+  margin: 0.04
+  minScale: 0.2
+  maxScale: 2.0
   controls: true
   controlsTutorial: true
   controlsLayout: 'bottom-right'
   controlsBackArrows: 'faded'
   progress: true
   slideNumber: false
+  showSlideNumber: 'all'
+  hashOneBasedIndex: false
   hash: false
   history: false
   keyboard: true
+  keyboardCondition: null
   overview: true
+  disableLayout: false
   center: true
   touch: true
   loop: false
@@ -21,6 +30,7 @@ revealjs:
   fragmentInURL: false
   embedded: false
   help: true
+  pause: true
   showNotes: false
   autoPlayMedia: null
   preloadIframes: null
@@ -29,16 +39,25 @@ revealjs:
   autoSlideMethod: 'Reveal.navigateNext'
   defaultTiming: 120
   mouseWheel: false
-  hideInactiveCursor: true
-  hideCursorTime: 5000
+  rollingLinks: false
   hideAddressBar: true
   previewLinks: false
+  postMessage: true
+  postMessageEvents: false
+  focusBodyOnPageVisibilityChange: true
   transition: 'slide'
   transitionSpeed: 'default'
   backgroundTransition: 'fade'
-  viewDistance: 3
   parallaxBackgroundImage: ''
   parallaxBackgroundSize: ''
+  parallaxBackgroundRepeat: ''
+  parallaxBackgroundPosition: ''
   parallaxBackgroundHorizontal: null
   parallaxBackgroundVertical: null
+  pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY
+  pdfSeparateFragments: true
+  pdfPageHeightOffset: -1
+  viewDistance: 3
   display: 'block'
+  hideInactiveCursor: true
+  hideCursorTime: 5000
